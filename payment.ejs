@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<h2>Payment</h2>
+<form action="/payment" method="POST">
+    <input type="text" name="cardName" placeholder="Name on Card" required>
+    <input type="text" name="cardNumber" placeholder="Card Number" required>
+    <input type="month" name="expiry" required>
+    <input type="text" name="cvv" placeholder="CVV" required>
+    <button type="submit">Pay Now</button>
+</form>
+<%- include('partials/footer') %>
